@@ -19,3 +19,13 @@ require_once("config.php");
 //$usuario = new Usuario();
 //$usuario->login("root", "23456");
 //echo $usuario;
+
+//CRIANDO NOVO USUARIO
+//$aluno = new Usuario("aluno","@lun0");
+//$aluno->insert();
+//echo $aluno;
+
+$usuario = new Usuario();
+$usuario->loadbyId(3);
+$usuario->update("professor","!@#$%%");
+echo $usuario;
